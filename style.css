@@ -1410,6 +1410,22 @@ font-size: 2.2rem;
 
 
 @media (min-width: 912px) and (max-width: 1023px) {
+
+  #services-intro h1 {
+    margin-top: -150px;
+    margin-left: 10px;
+    font-size: 7rem;
+  }
+
+   #services-intro p {
+    margin-left: 10px;
+    max-width: 500px;
+  }
+
+ #services {
+  margin-top: -290px;
+}
+
 .projects-hero2 {
   margin-top: -870px;
   display: flex;
@@ -1662,10 +1678,11 @@ font-size: 2.2rem;
  max-width: 350px;
 }
 
-
 }
 
 @media (max-width: 820px) {
+
+
 #services .details-main .btn-signing {
 display: block;
 margin-top: -70px;
@@ -3423,7 +3440,7 @@ header {
   }
 }
 
-@media (min-width: 374px) and (max-width:375px) {
+@media (min-width: 373px) and (max-width:389px) {
 .projects-hero2 {
   margin-top: -570px;
   display: flex;
@@ -4455,4 +4472,284 @@ margin-top: -70px;
   .contact-form {
     pointer-events: visible;
   }
+}
+
+@media (width: 768px) {
+  .projects-hero .content h1 {
+    font-size: 6rem !important;
+  }
+
+  .navhome {
+    display: none;
+  } 
+}
+
+@media (width: 540px) {
+
+   #about-title {
+  margin-top: -20px;
+  margin-left: 10px;
+  font-size: 3.5rem;
+}
+
+#about-intro {
+  margin-bottom: -250px;
+}
+
+#about img {
+  scale: .5;
+  margin-right: 20px;
+  margin-top: -80px;
+  margin-bottom: -50px;
+}
+
+#about {
+margin-top: 80px !important;
+}
+
+#about .project-content .intro-block h2 {
+ font-size: 4rem;
+ text-align: center;
+}
+
+#about .project-content .intro-block p {
+ font-size: 1.2rem;
+ text-align: center;
+ max-width: 460px;
+ margin-left: 0px;
+}
+
+#about .project-content .details-block h3 {
+ font-size: 2.2rem;
+  max-width: 300px;
+}
+
+#about .project-content .details-block p {
+ font-size: 1.2rem;
+ text-align: right;
+ max-width: 350px;
+}
+
+#about .project-content .details-block ul {
+ font-size: 1.2rem;
+ max-width: 350px;
+}
+
+
+    .projects-hero2 {
+  margin-top: -420px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects-hero2 .content h1 {
+  font-size: 3rem;
+}
+
+.projects-hero2 .content {
+  max-width: fit-content;
+  align-content: center;
+  margin-left: 265px;
+}
+
+/* CONTACT FORM STYLES */
+.contact-form {
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+
+  margin: 0 auto;           /* centers horizontally */
+  display: block;
+  max-width: 1000px;         /* keeps form narrow and neat */
+  width: 100%;  
+  margin-bottom: 2.5rem;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #e2e8f0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.contact-form button {
+  display: inline-block;
+  width: 100%;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+#servicesheader {
+  margin-left: 35px;
+display: flex;
+justify-content: center; /* centers horizontally */
+align-items: center;     /* centers vertically */
+}
+
+#services .intro-block img {
+  margin-bottom: -30px;
+}
+
+ #services-intro .content h1{
+  margin-top: 0px;
+  margin-left: 10px;
+  font-size: 4.5rem;
+  margin-bottom: -55px;
+}
+
+#services-intro .content p{
+  margin-top: 70px;
+  margin-left: 10px;
+  font-size: 1.3rem;
+}
+
+
+#services {
+margin-top: -130px;
+}
+
+#services .project-content img {
+  scale: .6;
+margin-right: -150px;
+margin-top: 100px;
+}
+
+#services .project-content h2 {
+font-size: 3.5rem;
+text-align: center;
+margin-top: -150px;
+}
+
+
+#services .project-content p {
+font-size: 1rem;
+text-align: center;
+}
+
+
+#services .details-main h3 {
+font-size: 3rem;
+text-align: center;
+}
+
+#services .details-main ul {
+font-size: 1rem;
+text-align: left;
+}
+
+#services .details-main li {
+font-size: 1rem;
+margin-bottom: 20px;
+}
+
+
+#services .details-main .btn-signing {
+display: block;
+margin-top: -70px;
+}
+
+
+
+#services .closing-paragraph {
+  margin-top: 20px;
+}
+
+
+
+#aboutheader {
+  margin-left: 30px;
+}
+
+  header {
+    flex-direction: row;        /* keep header items in a row */
+    align-items: center;
+    padding: 0.5rem 0rem; 
+    margin-left: 0px;     /* adjust to match existing mobile padding */
+  }
+
+  /* Ensure logo doesn't stack / float */
+  .logo {
+    margin-top: 0 !important;
+    margin-left: 0px !important;
+    display: flex;
+    vertical-align: middle;
+    scale: .9;
+  }
+
+  /* Force nav to show as horizontal inline list */
+  nav {
+    display: flex !important;
+    gap: 1rem;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: 95px; /* moves links left */
+    font-size: .1rem;
+  }
+
+  /* If your .btn-signing is hidden on small screens, show it */
+  .btn-signing {
+    display: none;
+  }
+
+#about-intro {
+  margin-bottom: -250px;
+}
+
+
+  .navhome {
+    display: none;
+  }
+
 }

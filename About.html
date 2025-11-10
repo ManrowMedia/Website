@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Manrow Media</title>
   <link rel="stylesheet" href="style.css">
+     <link rel="icon" type="image/x-icon" href="/1000x1000  FINAL - ICON - BORDERLESS - PNG.png">
+
 </head>
 <body>
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
   <script src="scriptabout.js" defer></script>
   <!-- ===== Background Video ===== -->
-  <video autoplay muted loop id="myVideo">6
+  <video autoplay muted loop playsinline webkit-playsinline id="myVideo">6
     <source src="/Stars.mp4" type="video/mp4">
   </video>
 
@@ -19,14 +21,14 @@
     <!-- ===== Header / Navbar ===== -->
     <header id="aboutheader">
       <h1 class="logo">
-        <a href="index.html">
+        <a href="Home.html">
           <img class="logo" src="/1920x1080  - LOGO.png" alt="ManrowMedia Logo">
         </a>
       </h1>
       <nav>
         <a href="/projects.html" class="navprojects">Client Projects</a>
         <a href="/services.html" class="navservices">Services</a>
-        <a href="/index.html" class="navhome">Home</a>
+        <a href="/Home.html" class="navhome">Home</a>
       </nav>
       <a href="/Contact.html" target="_blank">
       <button class="btn-signing">Launch Your Next Idea</button>
@@ -46,7 +48,7 @@
     <!-- First block: logo + H2 + first paragraph -->
     <div class="intro-block">
       <div class="logo-content">
-        <a href="/index.html">
+        <a href="/Home.html">
           <img src="/1000x1000  FINAL - ICON - BORDERLESS - PNG.png" alt="Manrow Media Logo">
         </a>
       </div>
@@ -125,7 +127,23 @@
   </div>
 </section>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("myVideo");
 
+    // Attempt to play immediately
+    video.play().catch(() => {
+        // If autoplay is blocked, try after a tiny user interaction
+        const tryPlay = () => {
+            video.play().catch(() => {
+                console.log("Autoplay still blocked");
+            });
+            document.removeEventListener("touchstart", tryPlay);
+        };
+        document.addEventListener("touchstart", tryPlay);
+    });
+});
+</script>
 
 </body>
 </html>
