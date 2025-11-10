@@ -37,7 +37,7 @@
         </header>
             <main>
                 <div class="vid-container">
-                    <video autoplay muted loop playsinline id="myVideo">
+                    <video autoplay muted loop playsinline webkit-playsinline id="myVideo">
                         <source src="/Stars.mp4" type="video/mp4">
                     </video>
                             <div class="black-rectangle"></div>
@@ -71,7 +71,23 @@
 
 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.86/build/spline-viewer.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("myVideo");
 
+    // Attempt to play immediately
+    video.play().catch(() => {
+        // If autoplay is blocked, try after a tiny user interaction
+        const tryPlay = () => {
+            video.play().catch(() => {
+                console.log("Autoplay still blocked");
+            });
+            document.removeEventListener("touchstart", tryPlay);
+        };
+        document.addEventListener("touchstart", tryPlay);
+    });
+});
+</script>
 
 </body>
 </html>

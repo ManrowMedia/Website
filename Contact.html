@@ -12,7 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
   <script src="scriptcontact.js" defer></script>
   <!-- ===== Background Video ===== -->
-  <video autoplay muted loop playsinline id="myVideo">
+  <video autoplay muted loop playsinline webkit-playsinline id="myVideo">
     <source src="/Stars.mp4" type="video/mp4" defer />
   </video>
 
@@ -62,6 +62,22 @@
 </section>
 
     <!-- ===== Services Section (re-uses project-section / project-content layout) ===== -->
-   
+   <script>
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("myVideo");
+
+    // Attempt to play immediately
+    video.play().catch(() => {
+        // If autoplay is blocked, try after a tiny user interaction
+        const tryPlay = () => {
+            video.play().catch(() => {
+                console.log("Autoplay still blocked");
+            });
+            document.removeEventListener("touchstart", tryPlay);
+        };
+        document.addEventListener("touchstart", tryPlay);
+    });
+});
+</script>
 </body>
 </html>
