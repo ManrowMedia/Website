@@ -945,7 +945,7 @@ nav a:hover {
   position:absolute;
   inset:0;
   pointer-events:none;
-  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.05) 0 1px, transparent 1px 20px);
+  background-image: repeating-linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0 1px, transparent 1px 20px);
   z-index:0;
   mix-blend-mode: screen;
 }
@@ -955,7 +955,7 @@ nav a:hover {
 }
 
 #services::after {
-  background-image: repeating-linear-gradient(-45deg, rgba(17,161,188,0.05) 0 1px, transparent 1px 30px);
+  background-image: repeating-linear-gradient(-45deg, rgba(17,161,188,0.1) 0 1px, transparent 1px 30px);
   animation: moveLinesReverse 45s linear infinite;
 }
 
@@ -1081,6 +1081,9 @@ nav a:hover {
 ============================== */
 
 @media (min-width: 1024px) and (max-width: 1024px) {
+
+
+
 .projects-hero2 {
   margin-top: -870px;
   display: flex;
