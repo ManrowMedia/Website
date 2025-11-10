@@ -1091,7 +1091,6 @@ nav a:hover {
   padding: 6rem 1rem;
   background: linear-gradient(135deg, #0f172a, #1e293b);
   color: #f1f5f9;
-  font-family: "Poppins", sans-serif;
 }
 
 .projects-hero2 .content h1 {
@@ -1408,6 +1407,112 @@ font-size: 2.2rem;
 
 
 @media (min-width: 912px) and (max-width: 1023px) {
+.projects-hero2 {
+  margin-top: -870px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 6rem 1rem;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects-hero2 .content h1 {
+  font-size: 7rem !important;
+  margin-left: 10px;
+}
+
+.projects-hero2 .content p {
+  font-size: 2rem !important;
+  max-width: 700px;
+  text-align: center;
+  margin-left:60px;
+}
+
+.projects-hero2 .content {
+  max-width: fit-content;
+  align-content: center;
+  margin-left: 265px;
+}
+
+
+/* CONTACT FORM STYLES */
+.contact-form {
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+
+  margin: 0 auto;           /* centers horizontally */
+  display: block;
+  max-width: 1000px;         /* keeps form narrow and neat */
+  width: 100%;  
+  margin-bottom: 0rem;
+  margin-top: 40px;
+  margin-left: 5px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  color: #e2e8f0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #334155;
+  background-color: #1e293b;
+  color: #f1f5f9;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 320px;
+}
+
+.contact-form button {
+  display: inline-block;
+  width: 100%;
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.9rem;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+
+
  .logo {
       margin-left: 10px;
     }
@@ -2565,6 +2670,8 @@ max-width: 300px;
    iPhone SE (~375px)
 ============================== */
 @media (max-width: 375px) {
+
+
     header {
         flex-direction: column;
         gap: 0.5rem;
@@ -3022,7 +3129,7 @@ margin-top: -70px;
 
 @media (min-width: 391px) and (max-width: 414px) {
 .projects-hero2 {
-  margin-top: -280px;
+  margin-top: -250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3116,6 +3223,7 @@ margin-top: -70px;
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
 }
+
 #servicesheader {
   margin-left: 35px;
 display: flex;
@@ -3128,7 +3236,7 @@ align-items: center;     /* centers vertically */
 }
 
  #services-intro .content h1{
-  margin-top: 0px;
+  margin-top: -40px;
   margin-left: 10px;
   font-size: 3.5rem;
   margin-bottom: -40px;
@@ -3142,7 +3250,7 @@ align-items: center;     /* centers vertically */
 
 
 #services {
-margin-top: -130px;
+margin-top: -170px;
 }
 
 #services .project-content img {
@@ -3346,7 +3454,6 @@ header {
   border-radius: 1rem;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
   text-align: center;
-
   margin: 0 auto;           /* centers horizontally */
   display: block;
   max-width: 1000px;         /* keeps form narrow and neat */
@@ -3570,6 +3677,11 @@ margin-top: -70px;
 }
 
 @media (min-width: 359px) and (max-width:360px) {
+#services-intro .subhead {
+  font-size: 1rem !important;
+ margin-top: 70px !important;
+}
+
 .projects-hero2 {
   margin-top: -330px;
   display: flex;
@@ -3592,6 +3704,7 @@ margin-top: -70px;
   align-content: center;
   margin-left: 265px;
 }
+
 
 /* CONTACT FORM STYLES */
 .contact-form {
@@ -3749,12 +3862,20 @@ margin-top: -70px;
  max-width: 350px;
 }
 
+
 #services .details-main .btn-signing {
 display: block;
 margin-top: -70px;
 }
 
+#services-intro .content h1 {
+  margin-top: 10px;
+}
 
+#services-intro .content p {
+  margin-top: 40px;
+  font-size: 1.2rem;
+}
 
 #services .closing-paragraph {
   margin-top: 20px;
@@ -3765,7 +3886,7 @@ margin-top: -70px;
 
 @media (min-width: 429px) and (max-width:430px) {
 .projects-hero2 {
-  margin-top: -510px;
+  margin-top: -470px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3951,7 +4072,7 @@ align-items: center;     /* centers vertically */
 }
 
  #services-intro .content h1{
-  margin-top: -40px;
+  margin-top: -80px;
   margin-left: 20px;
   font-size: 3.5rem;
   margin-bottom: -40px;
@@ -3965,13 +4086,14 @@ align-items: center;     /* centers vertically */
 
 
 #services {
-margin-top: -180px;
+margin-top: -200px;
 }
 
 #services .project-content img {
   scale: .45;
 margin-right: -195px;
 margin-top: -70px;
+margin-bottom: -25px;
 }
 
 #services .project-content h2 {
@@ -4314,4 +4436,20 @@ margin-top: -70px;
  font-size: 1rem;
  max-width: 350px;
 }
+}
+
+@media (width: 393px) {
+  #about-intro h1 {
+    font-size: 3.4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-video, .video-wrapper, video, iframe { 
+    pointer-events: none !important;
+  }
+
+  .contact-form {
+    pointer-events: visible;
+  }
 }
