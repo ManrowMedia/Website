@@ -5779,3 +5779,296 @@ margin-top: -70px;
   }
 
 }
+
+@media (width: 375px) {
+nav {
+margin-bottom: 20px;
+margin-right: 2px;
+}
+
+ .container .logo {
+margin-top: -10px !important;
+margin-left: 10px !important;
+}
+
+  .black-rectangle{
+    margin-top: -130px;
+  }
+.container h1 { 
+  width: 280px;
+  margin-left: -55px;;
+  margin-top: -60px;
+}
+
+.container p { 
+  width: 280px;
+  margin-left: -55px;
+  font-size: .7rem;
+}
+
+.btn-get-started {
+  font-size: .8rem;
+   width: 120%;
+   margin-left: -25px;
+   margin-bottom: 0px;
+}
+
+.btn-signing-main {
+  font-size: .8rem;
+  width: 120%;
+  margin-left: -25px;
+}
+
+
+.robot-3d {
+  margin-top: -35px;
+}
+
+.buttons {
+  margin-bottom: 0px;
+}
+
+
+#about .project-content p {
+
+margin-left: 0px;
+width: 100%;
+
+}
+
+#about .logo-content{
+margin-right: 15px !important;
+}
+
+#about {
+margin-top: 40px !important;
+}
+
+#about-intro h1 {
+  margin-top: -93px !important;
+  margin-left: 4px;
+}
+
+#aboutheader {
+  margin-left: -10px;
+}
+
+#aboutheader .navservices {
+margin-left: -50px;
+}
+
+#servicesheader {
+margin-left: -35px;
+}
+
+#servicesheader .navabout {
+  margin-left: -20px;
+}
+
+#services-intro .content .subhead {
+margin-top: 60px;
+}
+
+.projects-hero {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+#services .project-content .intro-block p {
+  margin-left: 0px;
+  width: 100%;
+}
+
+#services .project-content .intro-block .logo-content {
+  margin-right: 7px !important;
+}
+
+#services .project-content .details-block p {
+  margin-left: 0px;
+  width: 100%;
+}
+
+#blackrock  {
+  margin-top: -80px !important;
+}
+
+
+#blackrock p {
+  margin-left: 0px;
+  width: 100%;
+}
+
+.page-projects .projects-hero .content h1 {
+  margin-top: 40px !important;
+
+}
+
+.page-projects .projects-hero .content .description {
+  margin-left: 8px !important;
+
+}
+}
+
+@media (width: 393px) {
+  nav {
+margin-bottom: 20px !important;
+margin-right: 50px !important;
+margin-left: -10px;
+margin-bottom: 10px;
+}
+
+ .container .logo {
+margin-top: -10px !important;
+margin-left: -5px !important;
+}
+
+  .black-rectangle{
+    margin-top: 5px;
+  }
+
+.container h1 { 
+  width: 280px;
+  margin-left: -45px;;
+  margin-top: 20px;
+}
+
+.container p { 
+  width: 280px;
+  margin-left: -45px;
+  font-size: .7rem;
+}
+
+.btn-get-started {
+  font-size: .8rem;
+   width: 120%;
+   margin-left: -25px;
+   margin-bottom: 0px;
+   margin-top: -20px;
+}
+
+.btn-signing-main {
+  font-size: .8rem;
+  width: 120%;
+  margin-left: -25px;
+}
+
+
+.robot-3d {
+  margin-top: -50px;
+}
+
+.buttons {
+  margin-bottom: 0px;
+}
+
+#about .project-content p {
+
+margin-left: 0px;
+width: 100%;
+
+}
+
+#about .logo-content{
+margin-right: 0px !important;
+}
+
+#about {
+margin-top: 0px !important;
+}
+
+#about-intro h1 {
+  margin-top: -117px !important;
+  margin-left: 4px;
+  width: 100%;
+}
+
+#aboutheader {
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+#aboutheader .navservices {
+margin-left: -60px;
+}
+
+#servicesheader {
+margin-top: 10px;
+  margin-left: 20px;
+}
+
+#services {
+  margin-top: -200px;
+}
+
+
+#servicesheader .navabout {
+  margin-left: -40px;
+}
+
+#services-intro .content .subhead {
+margin-top: 60px;
+}
+
+#services-intro {
+margin-top: 0px;
+}
+
+.projects-hero {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+
+
+#services .project-content .intro-block p {
+  margin-left: 0px;
+  width: 100%;
+}
+
+#services .project-content .intro-block .logo-content {
+  margin-right: -7px !important;
+}
+
+#services .project-content .details-block p {
+  margin-left: 0px;
+  width: 100%;
+}
+
+#blackrock  {
+  margin-top: -40px !important;
+}
+
+
+#blackrock p {
+  margin-left: 0px;
+  width: 100%;
+}
+
+.projects-hero .content h1{
+  width: 100%;
+}
+
+.projects-hero .content {
+  margin-left: -10px;
+}
+
+.projects-hero .content .description{
+  width: 100%;
+}
+
+.page-projects .projects-hero .content h1 {
+  margin-top: 40px !important;
+
+}
+
+.page-projects .projects-hero .content .description {
+  margin-left: 8px !important;
+
+}
+
+.projects-hero2 {
+  margin-top: -270px !important;
+  margin-bottom: -100px;
+}
+
+}
+

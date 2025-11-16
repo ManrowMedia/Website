@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Manrow Media</title>
     <link rel="stylesheet" href="style.css">
+      <link rel="icon" type="image/png" href="/1000x1000  FINAL - ICON - BORDERLESS - PNG.png">
+
     
 </head>
 <body>
@@ -29,13 +31,13 @@
                 <a href="/projects.html" class="navprojects">Client Projects</a>
                 <a href="/services.html" class="navservices">Services</a>
             </nav>
-            <a href="/Contact.html" target="_blank">
+            <a href="/Contact.html">
             <button class="btn-signing">Launch Your Next Idea</button>
             </a>
         </header>
             <main>
                 <div class="vid-container">
-                    <video autoplay muted loop id="myVideo">
+                    <video autoplay muted loop playsinline webkit-playsinline id="myVideo">
                         <source src="/Stars.mp4" type="video/mp4">
                     </video>
                             <div class="black-rectangle"></div>
@@ -55,7 +57,7 @@
 
                     <div class="buttons">
                         <a href="/projects.html" class="btn-get-started">Client Projects</a>
-                        <a href="/Contact.html" target="_blank" class="btn-signing-main">Launch Your Next Idea</a>
+                        <a href="/Contact.html" class="btn-signing-main">Launch Your Next Idea</a>
                     </div>
                 </div>
                 <spline-viewer class="robot-3d" url="https://prod.spline.design/v19kYPHKbNyylkTV/scene.splinecode" defer></spline-viewer>
@@ -69,7 +71,23 @@
 
 <script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.86/build/spline-viewer.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("myVideo");
 
+    // Attempt to play immediately
+    video.play().catch(() => {
+        // If autoplay is blocked, try after a tiny user interaction
+        const tryPlay = () => {
+            video.play().catch(() => {
+                console.log("Autoplay still blocked");
+            });
+            document.removeEventListener("touchstart", tryPlay);
+        };
+        document.addEventListener("touchstart", tryPlay);
+    });
+});
+</script>
 
 </body>
 </html>
